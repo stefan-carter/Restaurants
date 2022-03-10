@@ -6,7 +6,7 @@ public class App {
         Restaurant.init();
 
         // Create restaurant
-        Restaurant restaurant = new Restaurant("Stefano's Pizza", "https://Stefanos.jpeg");
+        Restaurant restaurant = new Restaurant("Stefano's Pizza", "https://stefanos.jpeg");
         // Create menu
         Menu starters = new Menu("Starters");
         Menu mains = new Menu("Mains");
@@ -23,7 +23,7 @@ public class App {
         mains.getItem().add(pizza2);
 
         // Create second resaurant
-        Restaurant restaurant2 = new Restaurant("Emilie's Cakes and Shakes", "https://EmiliesC&S.jpeg");
+        Restaurant restaurant2 = new Restaurant("Emilie's Cakes and Shakes", "https://emiliesC&S.jpeg");
         // Create menu
         Menu sharers = new Menu("Sharers");
         Menu cakes = new Menu("Cakes");
