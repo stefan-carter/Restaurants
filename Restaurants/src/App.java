@@ -1,7 +1,12 @@
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+        // Create DB connection
+        new DB("jdbc:sqlite:./database.sqlite");
+        // Initialise class
+        Restaurant.init();
+
         // Create restaurant
-        Restaurant restaurant = new Restaurant("Stefano's Pizza");
+        Restaurant restaurant = new Restaurant("Stefano's Pizza", "https://Stefanos.jpeg");
         // Create menu
         Menu starters = new Menu("Starters");
         Menu mains = new Menu("Mains");
@@ -18,7 +23,7 @@ public class App {
         mains.getItem().add(pizza2);
 
         // Create second resaurant
-        Restaurant restaurant2 = new Restaurant("Emilie's Cakes and Shakes");
+        Restaurant restaurant2 = new Restaurant("Emilie's Cakes and Shakes", "https://EmiliesC&S.jpeg");
         // Create menu
         Menu sharers = new Menu("Sharers");
         Menu cakes = new Menu("Cakes");
@@ -33,5 +38,7 @@ public class App {
         // Add items to menu
         shakes.getItem().add(shake1);
         shakes.getItem().add(shake2);
+
+        DB.conn.close();
     }
 }

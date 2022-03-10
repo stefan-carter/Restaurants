@@ -3,6 +3,7 @@
         "lib/**/*.jar",
         "Restaurants/lib/hamcrest-core-1.3.jar",
         "Restaurants/lib/junit-4.13.2.jar",
-        "Restaurants/lib/junit5-0.5.0.jar"
+        "Restaurants/lib/junit5-0.5.0.jar",
+        "Restaurants/lib/sqlite-jdbc-3.36.0.3.jar"
     ]
 }

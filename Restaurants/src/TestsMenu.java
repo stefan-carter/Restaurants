@@ -18,7 +18,7 @@ public class TestsMenu {
 
     @Test
     public void restaurant_has_menu_and_menu_has_items() {
-        Restaurant restaurant = new Restaurant("Indian");
+        Restaurant restaurant = new Restaurant("Indian", "imageURL");
         restaurant.getMenu().add(new Menu("Drinks"));
     }
 
