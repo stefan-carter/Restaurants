@@ -40,6 +40,7 @@ public class Restaurant {
             insertRestaurant.setString(1, this.name);
             insertRestaurant.setString(2, this.imageURL);
             // insertRestaurant.setString(3, this.menu);
+        
 
             insertRestaurant.executeUpdate();
             this.id = insertRestaurant.getGeneratedKeys().getInt(1);
