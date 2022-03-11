@@ -1,3 +1,5 @@
+package co.uk.barclays;
+
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;

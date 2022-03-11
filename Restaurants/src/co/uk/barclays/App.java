@@ -1,3 +1,5 @@
+package co.uk.barclays;
+
 public class App {
     public static void main(String[] args) throws Exception {
         // Create DB connection

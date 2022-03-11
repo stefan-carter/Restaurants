@@ -1,3 +1,5 @@
+package co.uk.barclays;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -24,6 +26,8 @@ public class Restaurant {
                 String name = restaurants.getString(2);
                 String imageURL = restaurants.getString(3);
                 new Restaurant(id, name, imageURL);
+                // Query menu table and get all menus for the restaurant
+                // While loop over the results set (22)- create new menu and add to this.menus
             }
         } catch (SQLException error) {
             System.out.println(error.getMessage());
@@ -40,7 +44,6 @@ public class Restaurant {
             insertRestaurant.setString(1, this.name);
             insertRestaurant.setString(2, this.imageURL);
             // insertRestaurant.setString(3, this.menu);
-        
 
             insertRestaurant.executeUpdate();
             this.id = insertRestaurant.getGeneratedKeys().getInt(1);
