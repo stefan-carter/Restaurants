@@ -1,5 +1,3 @@
-package co.uk.barclays;
-
 import java.util.ArrayList;
 
 public class Menu {

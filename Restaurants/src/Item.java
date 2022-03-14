@@ -1,5 +1,3 @@
-package co.uk.barclays;
-
 public class Item {
     private String dish;
     private double price;
