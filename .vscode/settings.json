@@ -6,5 +6,5 @@
         "Restaurants/lib/junit5-0.5.0.jar",
         "Restaurants/lib/sqlite-jdbc-3.36.0.3.jar"
     ],
-    "java.project.outputPath": "Restaurants/bin"
+    "java.project.outputPath": "bin"
 }
